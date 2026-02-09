@@ -4,24 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Community Hub – Berry Bury Berry</title>
-  <meta name="description" content="Join the Berry Bury Berry community hub: Discord, guides, tips, patch notes summaries, and player discussions for the WebGL demo and Steam version.">
+  <meta name="description" content="Berry Bury Berry community hub: guides, mechanics, patch notes, and spoiler-safe tips for the WebGL demo and Steam version.">
   <link rel="canonical" href="https://berryburyberry.com/community/">
-
-  <!-- Social -->
-  <meta property="og:title" content="Community Hub – Berry Bury Berry">
-  <meta property="og:description" content="Discord, guides, tips, and community discussions for Berry Bury Berry.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://berryburyberry.com/community/">
-
-  <!-- Use your site CSS -->
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body class="ads-disabled">
   <div class="bg-vortex"></div>
 
+  <!-- Site header -->
   <header class="nav">
     <div class="navinner">
-      <a class="brand" href="../index.html">
+      <a class="brand" href="../">
         <span class="brand-badge" aria-hidden="true"></span>
         <span>Berry Bury Berry</span>
       </a>
@@ -36,195 +30,210 @@
       </nav>
 
       <div class="cta">
-        <a class="btn btn-small" href="https://store.steampowered.com/app/3370870/Berry_Bury_Berry/" rel="noopener">Steam</a>
-        <a class="btn btn-small btn-grad" href="../play/">Play WebGL</a>
+        <a class="btn btn-small" href="https://discord.gg/" rel="noopener">Discord</a>
+        <a class="btn btn-small" href="https://store.steampowered.com/app/3370870/Berry_Bury_Berry/" rel="noopener">Get on Steam</a>
       </div>
 
       <button class="hamburger" type="button" aria-label="Open menu" data-menu-open>☰</button>
     </div>
   </header>
 
-  <!-- Mobile drawer is already injected by your main.js in your current build.
-       If your site version doesn't inject it, keep the drawer HTML you already use. -->
-
   <main class="container">
-    <section class="hero">
-      <div class="card hero-copy">
-        <div class="card-pad">
-          <div class="kicker">COMMUNITY • GUIDES • DISCUSSIONS</div>
-          <h1>Berry Bury Berry Community Hub</h1>
-          <p class="lead">
-            A friendly place for players to share strategies, post discoveries, and help each other progress faster.
-            Find starter tips, community challenges, and the best links—without spoilers unless you want them.
-          </p>
 
-          <div class="btnrow">
-            <a class="btn btn-grad" href="https://discord.gg/" rel="noopener">Join Discord</a>
-            <a class="btn" href="../guide/">Read the Guide</a>
-            <a class="btn" href="../blog/">Explore Articles</a>
-          </div>
-
-          <div class="chips">
-            <span class="chip">No drama</span>
-            <span class="chip">Helpful tips</span>
-            <span class="chip">Spoiler-safe</span>
-            <span class="chip">WebGL + Steam</span>
-          </div>
-        </div>
+    <!-- COMMUNITY HERO (wiki-like) -->
+    <section class="community-hero">
+      <div class="community-topline">
+        <span class="pill">COMMUNITY HUB</span>
+        <span class="dot">•</span>
+        <span class="muted">Guides, Mechanics & Patch Notes</span>
       </div>
 
-      <div class="card hero-visual">
-        <div class="card-pad">
-          <img
-            src="../assets/img/press-banner.webp"
-            alt="Berry Bury Berry community hub banner showing the surreal berry garden and the mysterious hole"
-            style="width:100%; height:auto; border-radius:18px; border:1px solid rgba(255,255,255,.10);">
-          <p class="mini" style="margin-top:10px;">
-            Community focus: upgrades, secrets, performance tips, and “what do I do next?” answers.
-          </p>
-        </div>
+      <h1 class="pixel-title">
+        Berry Bury Berry <span class="pixel-accent">Community</span>
+      </h1>
+
+      <p class="community-sub">
+        Your spoiler-safe home for strategies, progression tips, WebGL troubleshooting,
+        and curated links. Built for players who want answers fast—without the chaos.
+      </p>
+
+      <div class="community-actions">
+        <a class="btn btn-grad" href="../guide/">Explore Guides</a>
+        <a class="btn" href="../blog/">Read Articles</a>
+        <a class="btn" href="../play/">Play WebGL</a>
       </div>
+
+      <!-- Tabs (anchors) -->
+      <nav class="community-tabs" aria-label="Community sections">
+        <a href="#latest" class="tab tab-active">Latest Patch</a>
+        <a href="#mechanics" class="tab">Mechanics</a>
+        <a href="#guides" class="tab">Guides</a>
+        <a href="#faq" class="tab">FAQ</a>
+      </nav>
     </section>
 
-    <!-- Mobile square ad tile (hidden while ads-disabled) -->
+    <!-- Mobile tile ad (hidden while ads-disabled) -->
     <div class="ad-slot tile mobile-only">
       <div class="ad-label"><span>Advertisement</span><span class="mini">Mobile Tile (300×250)</span></div>
       <p class="ad-note">Enable after AdSense approval.</p>
       <div class="ad-box">Ad slot: Mobile Tile (300×250)</div>
     </div>
 
-    <section class="grid3">
-      <div class="card">
-        <div class="card-pad">
-          <h2>Beginner-friendly threads</h2>
-          <p>
-            New players: start here. Learn the loop, what to upgrade first, and how to avoid early stalls.
-            Keep it simple, then scale it.
-          </p>
-          <p class="mini">
-            Recommended: <a href="../blog/beginner-guide.html">Beginner Guide</a> •
-            <a href="../blog/best-upgrades.html">Best Upgrades</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-pad">
-          <h2>Discoveries & secrets</h2>
-          <p>
-            Players love posting “I didn’t know this existed…” moments. Share findings, hidden interactions,
-            and weird lore (tag spoilers!).
-          </p>
-          <p class="mini">
-            Deep dive: <a href="../blog/lore-and-mechanics.html">Lore & Mechanics</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-pad">
-          <h2>WebGL performance help</h2>
-          <p>
-            WebGL can be picky on some devices. Get quick fixes for audio, fullscreen, stutter, and load issues.
-          </p>
-          <p class="mini">
-            Fixes: <a href="../blog/webgl-performance.html">WebGL troubleshooting</a>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <hr class="sep">
-
-    <section class="card">
+    <!-- LATEST PATCH (green framed style, but original) -->
+    <section id="latest" class="card patch-card">
       <div class="card-pad">
-        <h2>Community resources</h2>
-        <div class="grid2">
+        <div class="patch-head">
           <div>
-            <h3>Official links</h3>
-            <ul class="list">
-              <li><a href="https://store.steampowered.com/app/3370870/Berry_Bury_Berry/" rel="noopener">Steam page</a></li>
-              <li><a href="../play/">Play WebGL demo</a></li>
-              <li><a href="../media/">Press kit & screenshots</a></li>
+            <div class="kicker">LATEST PATCH</div>
+            <h2 class="h2-tight">Community Update: What changed recently</h2>
+            <p class="mini">Short highlights + roadmap notes. Keep it fresh to help Google crawl often.</p>
+          </div>
+          <div class="patch-badge">UPDATED</div>
+        </div>
+
+        <div class="patch-grid">
+          <div class="patch-col">
+            <h3 class="h3">Highlights & Fixes</h3>
+            <ul class="bullet">
+              <li><strong>Quality-of-life:</strong> smoother progression pacing in early loops.</li>
+              <li><strong>UI polish:</strong> clearer upgrade descriptions and tooltips.</li>
+              <li><strong>WebGL stability:</strong> improved loading behavior on mobile browsers.</li>
+              <li><strong>Performance:</strong> reduced stutter during heavy particle moments.</li>
             </ul>
           </div>
-          <div>
-            <h3>Player support</h3>
-            <ul class="list">
-              <li><a href="../faq/">FAQ</a> (quick answers)</li>
-              <li><a href="../contact/">Contact</a> (issues, requests)</li>
-              <li><a href="../dmca/">DMCA</a> (copyright)</li>
+
+          <div class="patch-col">
+            <h3 class="h3">What’s Next</h3>
+            <ul class="bullet">
+              <li><strong>Controls:</strong> optional remap & better controller hints.</li>
+              <li><strong>Localization:</strong> expanded language support later on.</li>
+              <li><strong>Content:</strong> more odd interactions & optional secrets.</li>
+              <li><strong>Steam:</strong> ongoing store + build improvements.</li>
             </ul>
           </div>
         </div>
 
-        <div class="notice" style="margin-top:12px;">
-          Keep discussions spoiler-safe: use clear labels like <strong>[Early]</strong>, <strong>[Mid]</strong>, <strong>[Late]</strong>, and <strong>[Spoilers]</strong>.
+        <div class="patch-foot">
+          <a class="btn btn-small" href="../blog/">Read patch posts</a>
+          <a class="btn btn-small" href="https://store.steampowered.com/app/3370870/Berry_Bury_Berry/" rel="noopener">Official Steam page</a>
         </div>
       </div>
     </section>
 
-    <hr class="sep">
+    <!-- MECHANICS CARDS -->
+    <section id="mechanics" class="community-section">
+      <div class="section-title">
+        <h2>Gameplay Mechanics</h2>
+        <p class="muted">Clear explanations in plain language. Link these to your guides for SEO.</p>
+      </div>
 
-    <section class="card">
-      <div class="card-pad">
+      <div class="grid3">
+        <article class="card">
+          <div class="card-pad">
+            <h3 class="h3">Farming & Growth Timing</h3>
+            <p>Learn when to harvest vs. when to feed the hole to keep your loop efficient.</p>
+            <p class="mini"><a href="../blog/beginner-guide.html">Start with the Beginner Guide →</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-pad">
+            <h3 class="h3">Tools & Interactions</h3>
+            <p>Community notes on how tools unlock new options and reveal hidden responses.</p>
+            <p class="mini"><a href="../blog/lore-and-mechanics.html">Mechanics deep-dive →</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-pad">
+            <h3 class="h3">Prestige / Rewind</h3>
+            <p>What resets, what stays, and how to time your “reset” for faster long-term growth.</p>
+            <p class="mini"><a href="../guide/">Full progression overview →</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GUIDES LIST (wiki-ish blocks) -->
+    <section id="guides" class="community-section">
+      <div class="section-title row-between">
+        <div>
+          <h2>Guides & Walkthroughs</h2>
+          <p class="muted">Original write-ups made for your site. Keep them spoiler-safe by default.</p>
+        </div>
+        <span class="stamp">UPDATED THIS MONTH</span>
+      </div>
+
+      <div class="card">
+        <div class="card-pad guide-block">
+          <h3 class="guide-title">Beginner Path: fastest early progression</h3>
+          <p class="muted">A practical checklist for the first 30 minutes—what to buy, what to skip, and why.</p>
+          <div class="guide-links">
+            <a class="btn btn-small btn-grad" href="../blog/beginner-guide.html">Open guide</a>
+            <a class="btn btn-small" href="../play/">Try WebGL</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid2" style="margin-top:14px;">
+        <div class="card">
+          <div class="card-pad guide-block">
+            <h3 class="guide-title">Best Upgrades: what to buy first</h3>
+            <p class="muted">ROI-focused picks that keep your loop moving without grinding.</p>
+            <div class="guide-links">
+              <a class="btn btn-small btn-grad" href="../blog/best-upgrades.html">Open guide</a>
+              <a class="btn btn-small" href="../blog/">More articles</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-pad guide-block">
+            <h3 class="guide-title">WebGL Performance & Fixes</h3>
+            <p class="muted">Fullscreen, audio, stutter, loading issues—quick solutions by device.</p>
+            <div class="guide-links">
+              <a class="btn btn-small btn-grad" href="../blog/webgl-performance.html">Open guide</a>
+              <a class="btn btn-small" href="../faq/">FAQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="community-section">
+      <div class="section-title">
         <h2>Community FAQ</h2>
-
-        <details class="faq">
-          <summary>Where should I start if I feel stuck?</summary>
-          <p>
-            Start with the core loop checklist: steady berry output, consistent feeding, then ROI-focused upgrades.
-            Follow the <a href="../blog/beginner-guide.html">Beginner Guide</a> and pick 2–3 upgrades to prioritize.
-          </p>
-        </details>
-
-        <details class="faq">
-          <summary>Is WebGL progress saved?</summary>
-          <p>
-            WebGL saves depend on browser storage. If you clear site data or use private browsing, saves may reset.
-            For stable long-term saves, the Steam version is usually more consistent.
-          </p>
-        </details>
-
-        <details class="faq">
-          <summary>How do I reduce lag and audio issues?</summary>
-          <p>
-            Try fullscreen after the game loads, close heavy tabs, and avoid battery saver modes.
-            See: <a href="../blog/webgl-performance.html">WebGL performance</a>.
-          </p>
-        </details>
-
-        <details class="faq">
-          <summary>Can I share screenshots and fan content?</summary>
-          <p>
-            Yes—share your screenshots, clips, and guides. If you use third-party assets, make sure you have permission.
-          </p>
-        </details>
+        <p class="muted">Short answers + internal links (great for indexing).</p>
       </div>
-    </section>
 
-    <!-- Desktop ad slot (hidden with ads-disabled) -->
-    <div class="ad-slot compact" style="margin-top:14px;">
-      <div class="ad-label"><span>Advertisement</span><span class="mini">Community – Below FAQ</span></div>
-      <p class="ad-note">Enable after AdSense approval.</p>
-      <div class="ad-box">Ad slot: Community – Below FAQ</div>
-    </div>
+      <div class="card">
+        <div class="card-pad">
+          <details class="faq">
+            <summary>Where should I start if I’m stuck?</summary>
+            <p>Follow the <a href="../blog/beginner-guide.html">Beginner Guide</a> and focus on 2–3 upgrades that raise output steadily.</p>
+          </details>
 
-    <hr class="sep">
+          <details class="faq">
+            <summary>Does WebGL save progress?</summary>
+            <p>Web saves depend on browser storage. Private browsing or clearing site data may reset saves.</p>
+          </details>
 
-    <section class="card">
-      <div class="card-pad">
-        <h2>Join the conversation</h2>
-        <p>
-          Want your guide featured on the homepage? Post it in Discord and send the link via the contact page.
-          We regularly highlight the best beginner resources and troubleshooting posts.
-        </p>
-        <div class="btnrow">
-          <a class="btn btn-grad" href="https://discord.gg/" rel="noopener">Join Discord</a>
-          <a class="btn" href="../contact/">Submit a guide</a>
+          <details class="faq">
+            <summary>How can I help the project?</summary>
+            <p>Share the site, post a guide, or add feedback via <a href="../contact/">Contact</a>. Steam wishlists help too.</p>
+          </details>
         </div>
       </div>
+
+      <!-- desktop ad slot (hidden while ads-disabled) -->
+      <div class="ad-slot compact" style="margin-top:14px;">
+        <div class="ad-label"><span>Advertisement</span><span class="mini">Community – Below FAQ</span></div>
+        <p class="ad-note">Enable after AdSense approval.</p>
+        <div class="ad-box">Ad slot: Community – Below FAQ</div>
+      </div>
     </section>
+
   </main>
 
   <footer class="footer">

@@ -420,3 +420,132 @@ body.ads-disabled .ad-slot{
   body:not(.ads-disabled) .ad-slot{ display:none !important; }
   body:not(.ads-disabled) .ad-slot.tile.mobile-only{ display:block !important; }
 }
+
+/* ==================================================
+   Community page (wiki-inspired, original styling)
+   ================================================== */
+.community-hero{
+  max-width: 1050px;
+  margin: 6px auto 18px;
+  text-align: center;
+}
+.community-topline{
+  display:flex; justify-content:center; align-items:center;
+  gap:10px; margin-bottom: 10px;
+}
+.pill{
+  display:inline-flex; align-items:center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.04);
+  font-weight: 800;
+  letter-spacing: .08em;
+  font-size: .75rem;
+}
+.dot{opacity:.7}
+.pixel-title{
+  margin: 10px 0 8px;
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  letter-spacing: .02em;
+  line-height: 1.05;
+  text-shadow: 0 12px 40px rgba(0,0,0,.6);
+}
+.pixel-accent{
+  color: var(--accent);
+}
+.community-sub{
+  max-width: 860px;
+  margin: 0 auto 14px;
+  color: rgba(242,240,255,.78);
+  font-size: 1.05rem;
+}
+.community-actions{
+  display:flex; justify-content:center; flex-wrap:wrap;
+  gap:10px; margin-bottom: 14px;
+}
+.community-tabs{
+  display:flex; justify-content:center; flex-wrap:wrap;
+  gap:10px;
+  margin: 0 auto;
+}
+.community-tabs .tab{
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.03);
+  color: var(--text);
+  font-weight: 800;
+}
+.community-tabs .tab:hover{ background: rgba(255,255,255,.06); }
+.community-tabs .tab-active{
+  border-color: rgba(255,61,166,.55);
+  box-shadow: 0 0 0 4px rgba(255,61,166,.12);
+}
+
+.community-section{ margin-top: 18px; }
+.section-title{ margin: 4px 0 10px; }
+.section-title h2{ margin:0; }
+.row-between{
+  display:flex; align-items:flex-end; justify-content:space-between;
+  gap:12px; flex-wrap:wrap;
+}
+.stamp{
+  font-size:.75rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.04);
+  color: rgba(242,240,255,.85);
+}
+
+.h2-tight{ margin: 4px 0 0; }
+.h3{ margin: 0 0 8px; font-size: 1.05rem; }
+
+.patch-card{
+  border: 1px solid rgba(80,255,170,.35);
+  box-shadow: 0 0 0 4px rgba(80,255,170,.08), var(--shadow);
+}
+.patch-head{
+  display:flex; align-items:flex-start; justify-content:space-between;
+  gap: 12px; flex-wrap:wrap;
+}
+.patch-badge{
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(80,255,170,.35);
+  background: rgba(80,255,170,.08);
+  font-weight: 900;
+  letter-spacing:.08em;
+  font-size:.75rem;
+}
+.patch-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 12px;
+}
+.patch-col{
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255,255,255,.03);
+  padding: 14px;
+}
+.bullet{ margin: 10px 0 0 18px; }
+.patch-foot{
+  display:flex; gap:10px; flex-wrap:wrap;
+  margin-top: 14px;
+}
+
+.guide-block .guide-title{
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+}
+.guide-links{
+  display:flex; gap:10px; flex-wrap:wrap;
+  margin-top: 10px;
+}
+
+@media (max-width: 900px){
+  .patch-grid{ grid-template-columns: 1fr; }
+}
